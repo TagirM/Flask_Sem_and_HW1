@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    {% for news in news_block %}
+    <div class="news">
+        <h1>{{news.title}}</h1>
+        <p>{{news.description}}</p>
+        <p>{{news.date_creation}}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
