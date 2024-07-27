@@ -6,17 +6,11 @@
 
 {% block content %}
 <div class="row">
+    {% for jackets in jackets_list %}
     <div class="col-12 col-md-6 col-lg-4">
-        <h3>Куртка 1</h3>
-        <img src="/static/image/jacket1.jpg" class="col-12 col-md-6 20 img-fluid rounded-circle" alt="">
+        <h3>{{ jackets.title }}</h3>
+        <img src="/static/image/{{ jackets.image }}" class="col-12 col-md-6 20 img-fluid rounded-circle" alt="">
     </div>
-    <div class="col-12 col-md-6 col-lg-4">
-        <h3>Куртка 2</h3>
-        <img src="/static/image/jacket2.jpg" class="col-12 col-md-6 20 img-fluid rounded-circle" alt="">
-    </div>
-    <div class="col-12 col-md-6 col-lg-4">
-        <h3>Куртка 3</h3>
-        <img src="/static/image/jacket3.jpg" class="col-12 col-md-6 20 img-fluid rounded-circle" alt="">
-    </div>
+    {% endfor %}
 </div>
 {% endblock %}

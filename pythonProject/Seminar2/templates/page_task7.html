@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ task }}
+{% endblock %}
+
+{% block content %}
+<form class="form_auth_style" action="#" method="post">
+    <label>Введите число</label>
+    <input type="number" name="number" placeholder="Введите число">
+    <button class="form_auth_button" type="submit" name="form_auth_submit">Отправить</button>
+</form>
+{% endblock %}

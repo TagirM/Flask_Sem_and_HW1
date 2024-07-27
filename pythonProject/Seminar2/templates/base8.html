@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ task }}
+{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('form') }}">Форма для ввода имени</a>
+{% endblock %}

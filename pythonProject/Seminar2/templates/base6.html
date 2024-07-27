@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ task }}
+{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('check_age') }}">Войти на страницу ввода данных</a>
+{% endblock %}
